@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LYRICSVENIENS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scrollmenu" style="background-color: #ffc000;">
+    <a href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="#support">Support</a>
+    <a href="#blog">Blog</a>
+    <a href="#tools">Tools</a>  
+    <a href="#base">Base</a>
+    <a href="#custom">Custom</a>
+    <a href="#more">More</a>
+    <a href="#logo">Logo</a>
+    <a href="#friends">Friends</a>
+    <a href="#partners">Partners</a>
+    <a href="#people">People</a>
+    <a href="#work">Work</a>
+  </div>
+   <div class="row">
+  <div class="left" >
+   <center> <h2>Menu</h2></center>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <li><a href="#">Hindia</a></li>
+      <li><a href="#">Payung Teduh</a></li>
+      <li><a href="#">Tulus</a></li>
+      <li><a href="#">Kerispatih</a></li>
+      <li><a href="#">.Feast</a></li>
+    </ul>
+  </div>
+  
+  <div class="right" style="background-color:#ddd;">
+    <h2>Page Content</h2>
+    <p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+    <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some text..</p>
+  </div>
+</div>
+
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("mySearch");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myMenu");
+            li = ul.getElementsByTagName("li");
+                for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName("a")[0];
+                        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                        }else {
+                            li[i].style.display = "none";
+                        }
+                }
+        }
+    </script>
+
+    <footer>
+      <div class="footer">
+         <div class="footer-content">
+          <div class="footer-section about">
+            <h1 class="logo-text"><span>LYRICS </span>VENIENS</h1>
+            <p></p>
+            <div class="contact" id="kontak">
+                <span><i class="fas fa-phone"></i> &nbsp; +62-899-923-4XXX</span>
+                <span><i class="fas fa-envelope"></i> &nbsp; info@tresinveniens.com</span>          
+                </div>
+            <div class="socials">
+                <a href="#"><i class="fab fa-Facebook"></i></a>
+                <a href="#"><i class="fab fa-Instagram"></i></a>
+                <a href="#"><i class="fab fa-Twitter"></i></a>
+                <a href="#"><i class="fab fa-Youtube"></i></a>
+              </div>
+            </div>
+          <div class="footer-section links" style="color: black;">
+            <h2>Quick Links</h2>
+            <br>
+            <ul>
+                <a href="#web.html"><li>Home</li>
+                </a>
+                <a href="#teks1"><li>Articles</li>
+                </a>
+                <a href="#teks2"><li>About Us</li>
+                </a>
+              </ul>
+          </div>
+          <div class="footer-section contact-form">
+            <h2 id="kontak">Contact</h2>
+            <form action="web.html" method="post">
+              <input type="email" name="email" class="text-input contact-input" placeholder="Masukkan alamat email...">
+              <textarea name="massage" class="text-input contact-input" placeholder="Berikan pesan..."></textarea>
+              <button type="submit" class="btn btn-big contact-btn" id="button3">
+                <i class="fas fa-envelope"></i>
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; TRESINVENIENS.com | Designed by HASBI&IRSYAD
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
