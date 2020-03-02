@@ -8,6 +8,8 @@
  html{
  	font-family: 'Roboto', sans-serif;
  	font-size: 10px;
+  margin: 0;
+
  }
 
  img{
@@ -21,6 +23,8 @@
  	justify-content: center;
  	background-color:#eee;
  	padding: 0 1.5rem;
+  padding-left: 30px;
+
  }
 
  .artist{
@@ -32,6 +36,8 @@
  	display: flex;
  	align-items: center;
  	border-radius: .8rem;
+  position: absolute;
+
  }
 
  .artist_img{
@@ -41,7 +47,7 @@
  	height: 30rem;
  	transform: translateX(-8rem);	
  	position: relative;
-
+  padding-left: 100px;
  }
  .artist_img img{
  	width: 100%;
@@ -89,28 +95,37 @@
 	background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
 	border-radius: .8rem;
 }
-
-
+.artist_read a{
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+}
 
 .drop-down{
-
-}
+  position: relative;
+  top: 50%;
+  align-items: center;
+} 
 
 .drop-down .selected a{
   background:#fff no-repeat scroll right center;
   display:block; 
-  padding-right:20px; 
   border:1px solid #d7d7d7; 
-  width:150px;
   border-radius:2px;
   text-decoration:none;
   color:#3179ac;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  border-radius: .8rem;
+  margin: 0;
+  max-width: 108rem;
 }
 
 .drop-down .selected a span{
   cursor:pointer; 
-  display:block; 
-  padding:5px;
+  display:block;
+  margin: 0; 
+  padding-left: 30px;
 }
 
 
