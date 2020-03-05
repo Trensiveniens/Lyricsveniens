@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LYRICSVENIENS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="scrollmenu" style="background-color: #ffc000;">
+        <a href="index.html">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="#more">FAQ</a>
+        <a href="#logo">Login</a>
+      </div>
+       <div class="row">
+      <div class="left" >
+       <center> <h2>Menu</h2></center>
+        <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+        <ul id="myMenu">
+          <li><a href="#">1000 Tahun Lamanya</a></li>
+          <li><a href="#">Gajah</a></li>
+          <li><a href="#">Manusia Kuat</a></li>
+          <li><a href="#">Monokrom</a></li>
+          <li><a href="#">Ruang Sendiri</a></li>
+        </ul>
+      </div>
+      
+      <div class="right" style="background-color:#ddd;">
+        <h2>1000 Tahun Lamanya</h2>
+        <p>Bila kau sanggup untuk melupakan dia</p>
+        <p>Biarkan aku hadir dan menata</p>
+        <p>Ruang hati yang telah tertutup lama</p><br>
+        <p>Jika kau masih ragu untuk menerima</p>
+        <p>Biarkan hati kecilmu bicara</p>
+        <p>Karena kuyakin 'kan datang saatnya</p><br>
+        <p>Kau jadi bagian hidupku</p>
+        <p>Kau jadi bagian hidupku</p><br>
+        <p>Takkan pernah berhenti untuk selalu percaya</p>
+        <p>Walau harus menunggu seribu tahun lamanya</p>
+        <p>Biarkanlah terjadi wajar apa adanya</p>
+        <p>Walau harus menunggu seribu tahun lamanya</p><br>
+        <p>Jika kau masih ragu untuk menerima</p>
+        <p>Biarkan hati kecilmu bicara</p>
+        <p>Karena kuyakin 'kan datang saatnya</p><br>
+        <p>Kau jadi bagian hidupku</p>
+        <p>Kau jadi bagian hidupku</p><br>
+        <p>Takkan pernah berhenti untuk selalu percaya</p>
+        <p>Walau harus menunggu seribu tahun lamanya</p>
+        <p>Biarkanlah terjadi wajar apa adanya</p>
+        <p>Walau harus menunggu seribu tahun lamanya</p><br>
+        <p>Selama apa pun itu</p>
+        <p>'Ku akan setia menunggu</p><br>
+        <p>Takkan pernah berhenti</p>
+        <p>Untuk selalu percaya</p>
+        <p>(Walau harus menunggu)</p><br>
+        <p>Takkan pernah berhenti untuk selalu percaya</p>
+        <p>Walau harus menunggu seribu tahun lamanya</p>
+        <p>Biarkanlah terjadi wajar apa adanya</p>
+        <p>Walau harus menunggu seribu tahun lamanya</p>
+    </div>
+    
+        <script>
+            function myFunction() {
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("mySearch");
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("myMenu");
+                li = ul.getElementsByTagName("li");
+                    for (i = 0; i < li.length; i++) {
+                        a = li[i].getElementsByTagName("a")[0];
+                            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                            li[i].style.display = "";
+                            }else {
+                                li[i].style.display = "none";
+                            }
+                    }
+            }
+        </script>
+    
+        <footer>
+          <div class="footer">
+             <div class="footer-content">
+              <div class="footer-section about">
+                <h1 class="logo-text"><span>LYRICS </span>VENIENS</h1>
+                <p></p>
+                <div class="contact" id="kontak">
+                    <span><i class="fas fa-phone"></i> &nbsp; +62-899-923-4XXX</span>
+                    <span><i class="fas fa-envelope"></i> &nbsp; info@tresinveniens.com</span>          
+                    </div>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-Facebook"></i></a>
+                    <a href="#"><i class="fab fa-Instagram"></i></a>
+                    <a href="#"><i class="fab fa-Twitter"></i></a>
+                    <a href="#"><i class="fab fa-Youtube"></i></a>
+                  </div>
+                </div>
+              <div class="footer-section links" style="color: black;">
+                <h2>Quick Links</h2>
+                <br>
+                <ul>
+                    <a href="#web.html"><li>Home</li>
+                    </a>
+                    <a href="#teks1"><li>Articles</li>
+                    </a>
+                    <a href="#teks2"><li>About Us</li>
+                    </a>
+                  </ul>
+              </div>
+              <div class="footer-section contact-form">
+                <h2 id="kontak">Contact</h2>
+                <form action="web.html" method="post">
+                  <input type="email" name="email" class="text-input contact-input" placeholder="Masukkan alamat email...">
+                  <textarea name="massage" class="text-input contact-input" placeholder="Berikan pesan..."></textarea>
+                  <button type="submit" class="btn btn-big contact-btn" id="button3">
+                    <i class="fas fa-envelope"></i>
+                    Send
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              &copy; TRESINVENIENS.com | Designed by HASBI&IRSYAD
+            </div>
+          </div>
+        </footer>
+    </body>
+    </html>
+    <title>LYRICSVENIENS</title>
+</head>
+<body>
+    
+</body>
+</html>

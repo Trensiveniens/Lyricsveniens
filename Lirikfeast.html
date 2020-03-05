@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LYRICSVENIENS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="scrollmenu" style="background-color: #ffc000;">
+        <a href="index.html">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="#more">FAQ</a>
+        <a href="#logo">Login</a>
+      </div>
+       <div class="row">
+      <div class="left" >
+       <center> <h2>Menu</h2></center>
+        <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+        <ul id="myMenu">
+          <li><a href="#">Berita Kehilangan</a></li>
+          <li><a href="#">Dalam Hitungan</a></li>
+          <li><a href="#">Kelelawar</a></li>
+          <li><a href="#">Peradaban</a></li>
+          <li><a href="#">Tarian Penghancur Raya</a></li>
+        </ul>
+      </div>
+      
+      <div class="right" style="background-color:#ddd;">
+        <h2>Berita Kehilangan</h2>
+        <p>Badanku terkujur kaku</p>
+        <p>Bentuk malang melintang</p>
+        <p>Tertutup mataku namun cahaya semakin terang</p>
+        <p>Jiwaku mengambang tinggi terus melayang-layang</p>
+        <p>Nyawaku dirampas namun kita yang jaya perang</p><br>
+        <p>Biarkan aku pergi dengan tenang</p>
+        <p>Bunda kali ini saja jangan menangisi jasadku</p>
+        <p>Namaku abadi</p>
+        <p>Kebencian takkan pernah menang karena</p><br>
+        <p>Beberapa orang memaafkan</p>
+        <p>Beberapa yang lain yang membawa</p>
+        <p>Berita kehilangan melalui</p>
+        <p>Perbuatan perkataan menyakitkan</p><br>
+        <p>Jika ini memang caranya</p>
+        <p>Menggenapkan namamu yang kuberikan</p>
+        <p>Sama seperti artinya</p>
+        <p>Saat kau berkorban menyadarkan</p><br>
+        <p>Sayang</p>
+        <p>Kau telah menjadi abadi</p>
+        <p>Di hati</p>
+        <p>Di sejarah kami</p>
+        <p>Dan kurelakan hari ini besok lusa</p>
+        <p>Atau lain kali karena</p><br>
+        <p>Beberapa orang memaafkan</p>
+        <p>Beberapa yang lain yang membawa</p>
+        <p>Berita kehilangan melalui</p>
+        <p>Perbuatan,</p>
+        <p>Perkataan menyakitkan</p><br>
+        <p>Beberapa orang memaafkan</p>
+        <p>Beberapa yang lain yang membawa</p>
+        <p>Berita kehilangan melalui</p>
+        <p>Perbuatan,</p>
+        <p>Perkataan menyakitkan</p><br>
+        <p>Takkan ada kedamaian di hidupmu</p>
+        <p>Takkan ada ketenteraman di kamarmu</p>
+        <p>Takkan ada keberlanjutan namamu</p>
+        <p>Takkan ada kedamaian di surgamu</p><br>
+        <p>Di dalam hidup ada saat untuk berhati-hati</p>
+        <p>Di dalam hidup ada saat untuk berhati-hati</p>
+        <p>Di dalam hidup ada saat untuk berhati-hati</p>
+        <p>Di dalam hidup ada saat untuk berhati-hati</p>
+        <p>Di dalam hidup ada saat untuk berhati-hati</p>
+    </div>
+    
+        <script>
+            function myFunction() {
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("mySearch");
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("myMenu");
+                li = ul.getElementsByTagName("li");
+                    for (i = 0; i < li.length; i++) {
+                        a = li[i].getElementsByTagName("a")[0];
+                            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                            li[i].style.display = "";
+                            }else {
+                                li[i].style.display = "none";
+                            }
+                    }
+            }
+        </script>
+    
+        <footer>
+          <div class="footer">
+             <div class="footer-content">
+              <div class="footer-section about">
+                <h1 class="logo-text"><span>LYRICS </span>VENIENS</h1>
+                <p></p>
+                <div class="contact" id="kontak">
+                    <span><i class="fas fa-phone"></i> &nbsp; +62-899-923-4XXX</span>
+                    <span><i class="fas fa-envelope"></i> &nbsp; info@tresinveniens.com</span>          
+                    </div>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-Facebook"></i></a>
+                    <a href="#"><i class="fab fa-Instagram"></i></a>
+                    <a href="#"><i class="fab fa-Twitter"></i></a>
+                    <a href="#"><i class="fab fa-Youtube"></i></a>
+                  </div>
+                </div>
+              <div class="footer-section links" style="color: black;">
+                <h2>Quick Links</h2>
+                <br>
+                <ul>
+                    <a href="#web.html"><li>Home</li>
+                    </a>
+                    <a href="#teks1"><li>Articles</li>
+                    </a>
+                    <a href="#teks2"><li>About Us</li>
+                    </a>
+                  </ul>
+              </div>
+              <div class="footer-section contact-form">
+                <h2 id="kontak">Contact</h2>
+                <form action="web.html" method="post">
+                  <input type="email" name="email" class="text-input contact-input" placeholder="Masukkan alamat email...">
+                  <textarea name="massage" class="text-input contact-input" placeholder="Berikan pesan..."></textarea>
+                  <button type="submit" class="btn btn-big contact-btn" id="button3">
+                    <i class="fas fa-envelope"></i>
+                    Send
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              &copy; TRESINVENIENS.com | Designed by HASBI&IRSYAD
+            </div>
+          </div>
+        </footer>
+    </body>
+    </html>
+    <title>LYRICSVENIENS</title>
+</head>
+<body>
+    
+</body>
+</html>
