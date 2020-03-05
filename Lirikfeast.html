@@ -1,152 +1,552 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>LYRICSVENIENS</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-      <div class="scrollmenu" style="background-color: #ffc000;">
-        <a href="index.html">Home</a>
-        <a href="#contact">Contact</a>
-        <a href="aboutus.html">About Us</a>
-        <a href="#more">FAQ</a>
-        <a href="#logo">Login</a>
-      </div>
-       <div class="row">
-      <div class="left" >
-       <center> <h2>Menu</h2></center>
-        <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
-        <ul id="myMenu">
-          <li><a href="#">Berita Kehilangan</a></li>
-          <li><a href="#">Dalam Hitungan</a></li>
-          <li><a href="#">Kelelawar</a></li>
-          <li><a href="#">Peradaban</a></li>
-          <li><a href="#">Tarian Penghancur Raya</a></li>
-        </ul>
-      </div>
-      
-      <div class="right" style="background-color:#ddd;">
-        <h2>Berita Kehilangan</h2>
-        <p>Badanku terkujur kaku</p>
-        <p>Bentuk malang melintang</p>
-        <p>Tertutup mataku namun cahaya semakin terang</p>
-        <p>Jiwaku mengambang tinggi terus melayang-layang</p>
-        <p>Nyawaku dirampas namun kita yang jaya perang</p><br>
-        <p>Biarkan aku pergi dengan tenang</p>
-        <p>Bunda kali ini saja jangan menangisi jasadku</p>
-        <p>Namaku abadi</p>
-        <p>Kebencian takkan pernah menang karena</p><br>
-        <p>Beberapa orang memaafkan</p>
-        <p>Beberapa yang lain yang membawa</p>
-        <p>Berita kehilangan melalui</p>
-        <p>Perbuatan perkataan menyakitkan</p><br>
-        <p>Jika ini memang caranya</p>
-        <p>Menggenapkan namamu yang kuberikan</p>
-        <p>Sama seperti artinya</p>
-        <p>Saat kau berkorban menyadarkan</p><br>
-        <p>Sayang</p>
-        <p>Kau telah menjadi abadi</p>
-        <p>Di hati</p>
-        <p>Di sejarah kami</p>
-        <p>Dan kurelakan hari ini besok lusa</p>
-        <p>Atau lain kali karena</p><br>
-        <p>Beberapa orang memaafkan</p>
-        <p>Beberapa yang lain yang membawa</p>
-        <p>Berita kehilangan melalui</p>
-        <p>Perbuatan,</p>
-        <p>Perkataan menyakitkan</p><br>
-        <p>Beberapa orang memaafkan</p>
-        <p>Beberapa yang lain yang membawa</p>
-        <p>Berita kehilangan melalui</p>
-        <p>Perbuatan,</p>
-        <p>Perkataan menyakitkan</p><br>
-        <p>Takkan ada kedamaian di hidupmu</p>
-        <p>Takkan ada ketenteraman di kamarmu</p>
-        <p>Takkan ada keberlanjutan namamu</p>
-        <p>Takkan ada kedamaian di surgamu</p><br>
-        <p>Di dalam hidup ada saat untuk berhati-hati</p>
-        <p>Di dalam hidup ada saat untuk berhati-hati</p>
-        <p>Di dalam hidup ada saat untuk berhati-hati</p>
-        <p>Di dalam hidup ada saat untuk berhati-hati</p>
-        <p>Di dalam hidup ada saat untuk berhati-hati</p>
-    </div>
-    
-        <script>
-            function myFunction() {
-                var input, filter, ul, li, a, i;
-                input = document.getElementById("mySearch");
-                filter = input.value.toUpperCase();
-                ul = document.getElementById("myMenu");
-                li = ul.getElementsByTagName("li");
-                    for (i = 0; i < li.length; i++) {
-                        a = li[i].getElementsByTagName("a")[0];
-                            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                            li[i].style.display = "";
-                            }else {
-                                li[i].style.display = "none";
-                            }
-                    }
-            }
-        </script>
-    
-        <footer>
-          <div class="footer">
-             <div class="footer-content">
-              <div class="footer-section about">
-                <h1 class="logo-text"><span>LYRICS </span>VENIENS</h1>
-                <p></p>
-                <div class="contact" id="kontak">
-                    <span><i class="fas fa-phone"></i> &nbsp; +62-899-923-4XXX</span>
-                    <span><i class="fas fa-envelope"></i> &nbsp; info@tresinveniens.com</span>          
-                    </div>
-                <div class="socials">
-                    <a href="#"><i class="fab fa-Facebook"></i></a>
-                    <a href="#"><i class="fab fa-Instagram"></i></a>
-                    <a href="#"><i class="fab fa-Twitter"></i></a>
-                    <a href="#"><i class="fab fa-Youtube"></i></a>
-                  </div>
-                </div>
-              <div class="footer-section links" style="color: black;">
-                <h2>Quick Links</h2>
-                <br>
-                <ul>
-                    <a href="#web.html"><li>Home</li>
-                    </a>
-                    <a href="#teks1"><li>Articles</li>
-                    </a>
-                    <a href="#teks2"><li>About Us</li>
-                    </a>
-                  </ul>
-              </div>
-              <div class="footer-section contact-form">
-                <h2 id="kontak">Contact</h2>
-                <form action="web.html" method="post">
-                  <input type="email" name="email" class="text-input contact-input" placeholder="Masukkan alamat email...">
-                  <textarea name="massage" class="text-input contact-input" placeholder="Berikan pesan..."></textarea>
-                  <button type="submit" class="btn btn-big contact-btn" id="button3">
-                    <i class="fas fa-envelope"></i>
-                    Send
-                  </button>
-                </form>
-              </div>
-            </div>
-            <div class="footer-bottom">
-              &copy; TRESINVENIENS.com | Designed by HASBI&IRSYAD
-            </div>
-          </div>
-        </footer>
-    </body>
-    </html>
-    <title>LYRICSVENIENS</title>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>LYRICSVENIENS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+  }
+
+  @font-face{
+
+    font-family:"Montserrat"
+    src:local("F:\Tugas\Semester 2\Proyek\Task 4\Task4.3\Lyricsveniens\Font/Montserrat-ExtraBold.otf");
+  }
+
+  h2{
+    font-family: Montserrat;
+    color: #333333;
+    letter-spacing: 2px;
+    font-weight: bolder;
+  }
+
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: #111;
+  }
+  .container {
+    padding: 80px 120px;
+  }
+  .person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+  }
+  .person:hover {
+    border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%); /* make all photos black and white */ 
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+  }
+  .carousel-caption h3 {
+    color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+    background: #2d2d30;
+    color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail p {
+    margin-top: 15px;
+    color: #555;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+  }
+  .modal-header, h4, .close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-header, .modal-body {
+    padding: 40px 50px;
+  }
+  .nav-tabs li a {
+    color: #777;
+  }
+  #googleMap {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }  
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #ffc000;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .navbar-header input[type=text] {
+  float: left;
+  padding-left: 4px;
+  margin-top: 1rem;
+  border: none;
+  font-size: 15px;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #333 !important;
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+    background-color: red !important;
+  }
+  footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+
+  * {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+  </style>
 </head>
-<body>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img src="img/TL.jpg" class="navbar-brand" href="#myPage">
+      <input type="text" placeholder="Cari Lagu/Penyanyi">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#popular">POPULAR</a></li>
+        <li><a href="#myArtist">ALL ARTIST</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li id="myBtn" class="active" style="cursor: pointer;"><a>LOGIN</a></li>
+        <!-- <button class="btn" data-toggle="modal" data-target="#myModal">LOGIN</button> -->
+
+
+      <!-- <a href="#search"><span class="glyphicon glyphicon-search"></span> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style="position:relative;">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      
+      <!-- Item 1 -->
+      <div class="item active">
+        <img src="img/feastbanner.jpg" alt="New York" style="width: 100%;height: 700px;">
+        <div class="carousel-caption">
+          <h3>Feast</h3>
+          <p>Baskara </p>
+        </div>      
+      </div>
+
+      <!-- Item 2 -->
+      <div class="item">
+        <img src="img/hindiabanner.jpg" alt="hindia" style="width: 100%;height: 700px;">
+        <div class="carousel-caption">
+          <h3>Hindia</h3>
+          <p>Thank you, Chicago - A night we won't forget.</p>
+        </div>      
+      </div>
     
+      <!-- Item 3 -->
+      <div class="item">
+        <img src="img/kerispatihbanner.jpg" alt="keripatih" style="width: 100%;height: 700px;">
+        <div class="carousel-caption">
+          <h3>Kerispatih</h3>
+          <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>
+        </div>      
+      </div>
+
+      <!-- Item 4 -->
+      <div class="item">
+        <img src="img/payungteduhbanner.jpg" alt="payungteduh" style="width: 100%;height: 700px;">
+        <div class="carousel-caption">
+          <h3>Payung Teduh</h3>
+          <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>
+        </div>      
+      </div>
+
+      <!-- Item 5 -->
+      <div class="item">
+        <img src="img/tulusbanner.jpg" alt="Los Angeles" style="width: 100%;height: 700px;">
+        <div class="carousel-caption">
+          <a href="#"><h3>Tulus</h3></a>
+          <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>
+        </div>      
+      </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<div class="row">
+  <div class="left" >
+   <center> <h2>Menu</h2></center>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <li><a href="#">Berita Kehilangan</a></li>
+      <li><a href="#">Dalam Hitungan</a></li>
+      <li><a href="#">Kelelawar</a></li>
+      <li><a href="#">Peradaban</a></li>
+      <li><a href="#">Tarian Penghancur Raya</a></li>
+    </ul>
+  </div>
+  
+  <div class="right" style="background-color:#ddd;">
+    <h2>Berita Kehilangan</h2>
+    <p>Badanku terkujur kaku</p>
+    <p>Bentuk malang melintang</p>
+    <p>Tertutup mataku namun cahaya semakin terang</p>
+    <p>Jiwaku mengambang tinggi terus melayang-layang</p>
+    <p>Nyawaku dirampas namun kita yang jaya perang</p><br>
+    <p>Biarkan aku pergi dengan tenang</p>
+    <p>Bunda kali ini saja jangan menangisi jasadku</p>
+    <p>Namaku abadi</p>
+    <p>Kebencian takkan pernah menang karena</p><br>
+    <p>Beberapa orang memaafkan</p>
+    <p>Beberapa yang lain yang membawa</p>
+    <p>Berita kehilangan melalui</p>
+    <p>Perbuatan perkataan menyakitkan</p><br>
+    <p>Jika ini memang caranya</p>
+    <p>Menggenapkan namamu yang kuberikan</p>
+    <p>Sama seperti artinya</p>
+    <p>Saat kau berkorban menyadarkan</p><br>
+    <p>Sayang</p>
+    <p>Kau telah menjadi abadi</p>
+    <p>Di hati</p>
+    <p>Di sejarah kami</p>
+    <p>Dan kurelakan hari ini besok lusa</p>
+    <p>Atau lain kali karena</p><br>
+    <p>Beberapa orang memaafkan</p>
+    <p>Beberapa yang lain yang membawa</p>
+    <p>Berita kehilangan melalui</p>
+    <p>Perbuatan,</p>
+    <p>Perkataan menyakitkan</p><br>
+    <p>Beberapa orang memaafkan</p>
+    <p>Beberapa yang lain yang membawa</p>
+    <p>Berita kehilangan melalui</p>
+    <p>Perbuatan,</p>
+    <p>Perkataan menyakitkan</p><br>
+    <p>Takkan ada kedamaian di hidupmu</p>
+    <p>Takkan ada ketenteraman di kamarmu</p>
+    <p>Takkan ada keberlanjutan namamu</p>
+    <p>Takkan ada kedamaian di surgamu</p><br>
+    <p>Di dalam hidup ada saat untuk berhati-hati</p>
+    <p>Di dalam hidup ada saat untuk berhati-hati</p>
+    <p>Di dalam hidup ada saat untuk berhati-hati</p>
+    <p>Di dalam hidup ada saat untuk berhati-hati</p>
+    <p>Di dalam hidup ada saat untuk berhati-hati</p>
+</div>
+</div>
+
+<!-- Container (TOUR Section) -->
+<div id="tour" class="bg-1">
+  
+  
+  <!-- Modal -->
+  <div class="modal" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content"> 
+        
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Login</h4>
+        </div>
+
+        <div class="modal-body">
+          <form role="form">
+        
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-user"></span> E-mail or Username</label>
+              <input type="text" class="form-control" id="psw" placeholder="Email or Username">
+            </div>
+        
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-lock"></span> Password</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Password">
+            </div>
+        
+            <button type="submit" class="btn btn-block">Sign In</button>
+
+          </form>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+          <p>Don't Have An Account?<a href="#"> SignUp Now</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer>
+
+  <div id="contact" class="container">
+    <h3 class="text-center" style="color: white">Contact</h3>
+    <p class="text-center"><em>We love our fans!</em></p>
+
+    <div class="row">
+      <div class="col-md-4">
+        <p><span class="glyphicon glyphicon-question-sign"></span><a href="FAQ.html"> FAQ</a></p>
+        <p><span class="glyphicon glyphicon-question-sign"></span><a href="Aboutus.html"> About us</a></p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> Jurusan Teknik Komputer Bandung</p>
+        <p><span class="glyphicon glyphicon-phone"></span> +62</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> Tresinveniens@jtk.polban.ac.id</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> Instagram : Tresinveniens</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> Facebook : Tresin_veniens</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> Twitter : Tresinveniens_</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> Github : Trensiveniens</p>
+      </div>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+        <br>
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <button class="btn pull-right" type="submit">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+
+</footer>
+
+<script>
+
+//SLIDER
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+
+//CHANGE TEXT
+// function for change text lihat semua to lihat lebih sedikit
+function changeText(){
+var p = document.getElementById('viewMore').innerHTML;
+  if (p == 'Lihat Semua') {
+    document.getElementById('viewMore').innerHTML = 'Lihat Lebih Sedikit';
+  }
+  else{
+   document.getElementById('viewMore').innerHTML = 'Lihat Semua';
+  }
+}
+
+// LOGIN PAGE
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+
 </body>
 </html>
