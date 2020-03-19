@@ -6,10 +6,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
   body {
     font: 400 15px/1.8 Lato, sans-serif;
@@ -193,12 +194,14 @@
         <li><a href="#popular">POPULAR</a></li>
         <li><a href="#myArtist">ALL ARTIST</a></li>
         <li><a href="#contact">CONTACT</a></li>
-        <li><a href="headline.html">SCRAPING</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SCRAPING<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="headline.html" style="font-family: sans-serif;">TASK 5</a></li>
+            <li><a href="ScrapingTresinveniens.html" style="font-family: sans-serif;">TASK 6</a></li>
+          </ul>
+        </li>
+
         <li id="myBtn" class="active" style="cursor: pointer;"><a>LOGIN</a></li>
-        <!-- <button class="btn" data-toggle="modal" data-target="#myModal">LOGIN</button> -->
-
-
-      <!-- <a href="#search"><span class="glyphicon glyphicon-search"></span> -->
       </ul>
     </div>
   </div>
